@@ -37,7 +37,6 @@ Player& battle(Player& account) {
         cout << "press 2 to run" << endl;
         cin >> choice;
         if (choice == 1) {
-            // Add battle logic here
         } else if (choice == 2) {
             break;
         }

@@ -9,19 +9,20 @@
 using namespace std;
 
 class Game {
+
+    private: 
+       int choice; 
+       bool playing;
+
+
    public:
        Game();
-       ~Game();
        
        // Accessories
        bool isPlaying() { return this->playing; }
 
        // Functions 
        void mainMenu();
-
-   private: 
-       int choice; 
-       bool playing;
 };
 
 #endif 

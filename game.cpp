@@ -15,28 +15,27 @@ Game::Game() {
 // Functions 
 
 void Game::mainMenu() {
-
-switch (choice) {
-    case 0:
-    playing = false;
-     cout << "Leaving game" << endl;
-    break;
-    case 1:
-    cout << "Traveling" << endl;
-    break;
-    case 2: 
-    cout << "Opening Inventory" << endl;
-    break;
-    case 3:
-    cout << "Opening shop" << endl;
-    break;
-    case 4:
-    cout << "Leveling Up" << endl;
-    break;
-    default:
-     cout << "Invalid choice" << endl;
-    break;
-
-      }
- cout << "\n";
+    
+    switch (choice) {
+        case 0:
+            playing = false;
+            std::cout << "Leaving game" << std::endl;
+            break;
+        case 1:
+            std::cout << "Traveling" << std::endl;
+            break;
+        case 2: 
+            std::cout << "Opening Inventory" << std::endl;
+            break;
+        case 3:
+            std::cout << "Opening shop" << std::endl;
+            break;
+        case 4:
+            std::cout << "Leveling Up" << std::endl;
+            break;
+        default:
+            std::cout << "Invalid choice" << std::endl;
+            break;
+    }
+    std::cout << "\n";
 }
