@@ -51,7 +51,7 @@ int main() {
     cout << "Hello, please enter your username" << endl;
     cin >> name;
     
-    string location[3] = {"The Cave", "The City", "Home"};
+    string location[] = {"The Cave", "The City", "Home"};
     Player account(name, location[0], 1, 2);
     
     cout << "Enter where you would like to travel" << endl;
