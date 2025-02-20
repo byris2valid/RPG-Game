@@ -8,13 +8,7 @@ class Player {
 private:
     std::string name;
     std::string location;
-    int level;
-    int health;
-    int maxHealth;
-    int damage;
-    int gold;
-    int experience;
-    
+   
 public:
     // Constructor
     Player(std::string name, std::string location, int level, int damage) {
