@@ -3,38 +3,47 @@
 #include <ctime>
 #include "player.h"
 #include "enemy.h"
+#include <windows.h>
 
 using namespace std;
 
+
+  
+
+
 // Function Prototypes
-player battle(player account);
-player shop(player account);
-player level(player account);
-void death();
 
 
-player battle(player account) {
-    int choice
+
+Player& shop(Player& account) {
+    int quest;
+    int weaponShop;
+    int collectibles;
+
+    return account;
+}
+
+
+
+Player& battle(Player& account) {
+    int choice;
     int playerHealth = 100;
     int enemyHealth = 200;
-    int playerDamage
-    int enemyDamage
+    int playerDamage;
+    int enemyDamage;
 
     while(true) {
         cout << "press 1 to attack" << endl;
         cout << "press 2 to run" << endl;
         cin >> choice;
         if (choice == 1) {
-            
+            // Add battle logic here
+        } else if (choice == 2) {
+            break;
         }
-         
-            
-        
-
-
-        }
-
     }
+    return account;
+}
 
 int main() {
     string name;
@@ -43,7 +52,7 @@ int main() {
     cin >> name;
     
     string location[3] = {"The Cave", "The City", "Home"};
-    player account(name, location[0], 1, 0);
+    Player account(name, location[0], 1, 2);
     
     cout << "Enter where you would like to travel" << endl;
     

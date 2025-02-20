@@ -1,5 +1,5 @@
-#ifndef Game
-#define Game
+#ifndef GAME_H
+#define GAME_H
 
 #include <iostream>
 #include <string>
@@ -9,33 +9,20 @@
 using namespace std;
 
 class Game {
-
-    public:
-       
+   public:
        Game();
        ~Game();
        
-
-
-   // Accessories
-
-   bool isPlaying() { return this->playing; }
-
-
+       // Accessories
+       bool isPlaying() { return this->playing; }
 
        // Functions 
-
        void mainMenu();
 
+   private: 
+       int choice; 
+       bool playing;
+};
 
+#endif 
 
-
-        private: 
-           int choice; 
-           bool playing;
-       
-
-        
-}
-
-#endif
