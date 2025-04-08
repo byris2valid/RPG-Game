@@ -12,7 +12,8 @@ private:
     int damage;
     int health;
     int skills;
-public:
+
+    public:
     // Constructor
     Player(std::string name, std::string location, int level, int damage) {
         this->name = name;
