@@ -3,6 +3,8 @@
 #include "game.h"
 #include <string>
 
+using namespace std;
+
 class Player {
 private:
     std::string name;
@@ -15,7 +17,7 @@ private:
 
     public:
     // Constructor
-    Player(std::string name, std::string location, int level, int damage) {
+    Player(std::string name, std::string location) {
         this->name = name;
         this->location = location;
     }
@@ -25,7 +27,19 @@ private:
     std::string getLocation() { return location; }
 
     // Setters
-    void setLocation(std::string newLocation) { location = newLocation; }
+    void setLocation(std::string newLocation) { 
+        location = newLocation; 
+    }
+
+    void selectInventory(int inventory) { 
+         int choice;
+
+           if (choice == 1) {
+            cout << "pickaxe" << endl; 
+           } else if (choice == 2) {
+
+           }
+    }
 };
 
 #endif

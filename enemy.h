@@ -37,7 +37,8 @@ using namespace std;
                if(level <= 5) {
                 this->strength = 100;
                }
-            }     };
+            }     
+        };
 
 
 
