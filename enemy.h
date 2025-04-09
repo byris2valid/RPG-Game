@@ -14,6 +14,9 @@ using namespace std;
             int damage;
             int weapons;
             int armor;
+            int getDamage() {
+                return damage;
+            }
 
            // Enemy health & damage
 
@@ -23,13 +26,14 @@ using namespace std;
                 this->health = health;
             }
 
-            void takeDamage(int damage) {
-                health -= damage;
-                if(health - 0) {
-                    health = 0;
-                }
-            }
-
+            void takeDamage(Player& player) {
+                if(damage == 100) {
+                    health -= 100;
+                   } else {
+                    health -= 400;
+                   }
+            }                       
+            
             // Enemy strength 
 
             void setStrength(int strength, int level) {
